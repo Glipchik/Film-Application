@@ -1,10 +1,10 @@
-﻿using FilmLibrary.Core.Exceptions;
-using FilmLibrary.Core.Constants;
+﻿using FilmLibrary.Core.Constants;
 using FilmLibrary.Core.Entities;
+using FilmLibrary.Core.Exceptions;
 using FilmLibrary.DAL.Context;
+using FilmLibrary.DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using FilmLibrary.DAL.Interfaces;
 
 namespace FilmLibrary.DAL.Repositories
 {
@@ -26,7 +26,7 @@ namespace FilmLibrary.DAL.Repositories
 
         public bool Delete(string name)
         {
-            if (_context.Movies is null) 
+            if (_context.Movies is null)
                 return false;
 
             var movie = _context.Movies.FirstOrDefault(n => n.Name.Equals(name));
