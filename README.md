@@ -3,17 +3,19 @@ Welcome to **Film Library** service!(like Kinopoisk or IMDb)
 It enables you to get some information about movies and add it to your favourites(if you are a regular user).
 ---
 
-#Getting started
+Getting started
 Before launching the app you have to change the connection string to your database. 
 You can do it in "appsettings.json" file in FilmLibrary.UI folder.
 ---
 
-#How does it work
+How does it work
 ---
-##Logging in
+Logging in
+
 First of all, you need to log in(initially available accounts: login - "Gleb", password - "adminpass" for administrator 
 and login - "George", password - "george" for regular user) or to sign up using the new login and password.
-##Application operation
+
+Application operation
 When you launch the application, you see common list of movies available for everybody. 
 - If you are logged in as a common user,
 you can add a film to your favourites using star near this film's record. Then you can check your favourites using title "Show favourite movies".

@@ -2,6 +2,6 @@
 {
     public static class UnitTestsConstants
     {
-        public const string TestsConnectionString = "Data Source=H-BIAROZKIN\\MSSQLSERVER2;Initial Catalog=ConsoleAppDb;Integrated Security=True;";
+        public const string TestsConnectionString = "Data Source=DESKTOP-3F0GQMQ;Initial Catalog=ApartmentsParser;Integrated Security=True;";
     }
 }
